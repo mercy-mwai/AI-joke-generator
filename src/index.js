@@ -1,6 +1,5 @@
 function displayJoke(response) {
     console.log(response.data.answer);
-  
     new Typewriter("#joke", {
       strings: response.data.answer,
       autoStart: true,
