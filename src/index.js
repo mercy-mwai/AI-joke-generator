@@ -6,7 +6,7 @@ function displayJoke(response) {
       cursor: null,
       delay: 20,
     });
-  }
+  };
   
   function generateJoke(event) {
     event.preventDefault();
@@ -22,7 +22,7 @@ function displayJoke(response) {
   
     console.log("called the AI api");
     axios.get(apiUrl).then(displayJoke);
-  }
+  };
   
   let generatorButton = document.querySelector("#generate-joke-button");
   generatorButton.addEventListener("click", generateJoke);
